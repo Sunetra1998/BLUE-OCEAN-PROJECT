@@ -1,0 +1,23 @@
+.tab{
+    ul{
+        list-style-type: none;
+        li{
+            display: inline;
+            color: gray;
+            text-align: center;
+            border-bottom: 2px solid lightgray;
+            font-size: 1.25rem;
+        }
+        li:hover{
+            color:black;
+            cursor:pointer;
+            border-color: blue;
+        }
+    }
+    .content{
+        display: none;
+    }
+    .show-content{
+        display: block;
+    }
+}

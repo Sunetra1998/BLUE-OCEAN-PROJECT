@@ -1,0 +1,78 @@
+/* Import font (replace with your preferred font if necessary) */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+.side-container {
+  background-color: #f1f5f9;
+  /* Light gray background */
+  height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #007bff;
+  width: 72px;
+  padding: 2rem 1rem;
+  /* Padding for content */
+  border-right: 1px solid #e0e0e0;
+  /* Border on the right side */
+
+  ul {
+    list-style: none;
+    /* Remove default bullet points */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+    width: 100%;
+    /* Full width of the container */
+
+    li {
+      margin-bottom: 2.5rem;
+      /* Spacing between list items */
+      font-family: "Rubik", sans-serif;
+      /* Font family */
+      font-size: 0.6rem;
+      /* Font size */
+      cursor: pointer;
+      /* Hand cursor on hover */
+      color: white;
+      /* Text color */
+      transition: color 0.2s ease-in-out;
+      /* Smooth color transition */
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .active-link{
+        color: white;
+      }
+      .active-link:hover {
+        background-color: #29b6f6;
+        color:#f1f5f9;
+        border-radius: 2px;
+        /* Change color on hover */
+      }
+      svg {
+        font-size: 26px;
+      }
+
+      &:hover {
+        color: #29b6f6;
+        /* Change color on hover */
+      }
+
+      li.active {
+        /* Active list item style */
+        color: #29b6f6;
+        /* Change color for active item */
+        font-weight: bold;
+        /* Bold text for active item */
+        background-color: red;
+
+      }
+
+    }
+  }
+}

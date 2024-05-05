@@ -1,0 +1,54 @@
+.card2 {
+  // height: 80px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid lightgray;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  // border: 1px solid transparent;
+  box-shadow: 1px 1px 1px rgba(245, 245, 220, 0.5);
+
+  .card2-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(190, 234, 252);
+    color: black;
+    padding: 16px 0;
+    border-radius: 8px;
+    
+    width: 100%;
+    .card2-header_left {
+      padding-left: 16px;
+
+      span {
+        background-color: white;
+        padding: 4px 8px;
+        margin-left: 8px;
+      }
+    }
+
+    .card2-header_right {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      .checkbox {
+        display: flex;
+
+        span {
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+
+  .card-body {
+    color: black;
+
+    p {
+      padding-left: 16px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.library {
+    display: flex;
+
+    .Main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: lightgray;
+
+        .library-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: lightgray;
+
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

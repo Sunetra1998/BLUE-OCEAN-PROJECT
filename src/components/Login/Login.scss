@@ -1,0 +1,105 @@
+.Login {
+  display: flex;
+  padding: 4% 8%;
+}
+
+.Image {
+  background-color: gray;
+  width: 500px;
+  height: 700px;
+  border-radius: 8px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #fff;
+  width: 60%;
+  margin-left: auto;
+}
+
+.login-container .form-group {
+  position: relative;
+
+  label {
+    position: absolute;
+    top: -9px;
+    left: 12px;
+    background-color: white;
+    z-index: 100;
+  }
+
+  input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 1px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem; // Adapt to your font scale
+
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+      box-shadow: 0px 0px 0px 3px rgba(86, 61, 124, 0.1);
+    }
+  }
+}
+
+.login-container .form-group .email {
+  margin-bottom: 2rem;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0069d9;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.login-container form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-container form a {
+  margin-top: 8px;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  color: #0069d9;
+  font-size: 1rem;
+}
+
+.login-container form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-container form button:hover {
+  background-color: #0069d9;
+}
+
+.login-container p {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.SignUp {
+  color: #0069d9;
+}

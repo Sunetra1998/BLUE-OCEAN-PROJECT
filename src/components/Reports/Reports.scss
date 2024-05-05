@@ -1,0 +1,29 @@
+.Reports {
+    display: flex;
+
+    .Main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(250, 248, 248);
+
+        .ChartContainer{
+            margin-top: 1rem;
+            display: flex;
+            
+            .Chart {
+                border-radius: 8px;
+                margin-top: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                background-color: skyblue;
+    
+                canvas {
+                    height: 300px !important;
+                    width: 400px !important;
+    
+                }
+            }
+        }
+    }
+}

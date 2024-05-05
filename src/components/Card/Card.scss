@@ -1,0 +1,25 @@
+.card {
+    width: 44%;
+    border: 1px solid beige;
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 160px;
+    color: black;
+    header {
+      color: black;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    main {
+      color: black;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    footer {
+      color: black;
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+  }

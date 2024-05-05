@@ -1,0 +1,28 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.items-per-page select {
+  padding: 5px;
+}
+
+.page-navigation button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.page-navigation button:hover {
+  background-color: #f0f0f0;
+}
+
+.page-navigation button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

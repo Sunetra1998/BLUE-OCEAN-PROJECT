@@ -1,0 +1,116 @@
+.Assignment {
+    display: flex;
+
+    .Main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(250, 248, 248);
+
+        .Main-Section {
+            display: flex;
+            background-color: white;
+            border: 1px solid lightgray;
+            border-radius: 8px;
+            margin-top: 2rem;
+            justify-content: space-between;
+            height: 100vh;
+            margin-left: 1rem;
+
+            .Section-left {
+                width: 40%;
+                border-right: 1px solid lightgray;
+
+                .Header-Section {
+                    height: 50px;
+                    background-color: skyblue;
+                    padding: 14px 8px;
+
+                    h3 {
+                        margin: 0;
+                    }
+                }
+
+                table {
+                    tbody {
+                       tr{
+                        td {
+                            padding:6px;
+                            span {
+                                color: blue;
+                            }
+
+                            svg {
+                                fill: gray;
+                            }
+
+                            .icon {
+                                fill: rgb(34, 107, 34);
+                            }
+
+                            .graycolumn {
+                                color: gray;
+                            }
+                        }
+                       }
+                    }
+                }
+            }
+            .Section-right{
+                width: 60%;
+                padding:10px;
+
+                h3{
+                    margin:0;
+                    margin-bottom: 1rem;
+                    span{
+                        color:gray;
+                    }
+                }
+                .likelihood-score {
+                    /* Style the overall container */
+                    padding: 20px;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                  
+                    h2 {
+                      margin-top: 0;
+                    }
+                  
+                    .radio-group {
+                      /* Style the radio button group */
+                      display: flex;
+                      flex-wrap: wrap;
+                      margin-bottom: 15px;
+                  
+                      label {
+                        margin-right: 15px;
+                  
+                        input[type="radio"] {
+                          margin-right: 5px;
+                        }
+                      }
+                    }
+                  
+                    .business-impact {
+                      /* Style the business impact section */
+                      display: flex;
+                      align-items: center;
+                      margin-bottom: 10px;
+                  
+                      span {
+                        margin-right: 10px;
+                      }
+                  
+                      select {
+                        padding: 5px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                      }
+                    }
+                  }
+                  
+            }
+        }
+    }
+}

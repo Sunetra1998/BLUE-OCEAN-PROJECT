@@ -1,25 +1,138 @@
-.modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 10; /* Ensure the modal is on top of other elements */
-  }
-  
+// AddRiskScenariosModal.scss
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .modal-content {
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
+    width: 800px;
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+    }
+
+    .close-button:hover {
+      background-color: lightgray;
+      border: 1px solid black;
+      cursor: pointer;
+      border-radius: 6px;
+      padding: 0 8px;
+    }
   }
-  
-  .modal-body {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
+}
+
+.text-field {
+  position: relative;
+}
+
+.text-field label {
+  display: block;
+  text-align: left;
+  position: absolute;
+  top: 6px;
+  left: 24px;
+  z-index: 10;
+  background-color: white;
+  padding: 4px;
+}
+
+.text-field input {
+  width: 94%;
+  padding: 8px 16px;
+  margin: 16px auto;
+}
+
+.risk-details_1 {
+  display: flex;
+  gap: 8.2rem;
+}
+
+.risk-details_1 .text-field {
+  width: 40%;
+}
+
+.risk-details_1 input {
+  margin: 8px;
+}
+
+#Risk-2 {
+  width: 101%;
+}
+
+.risk-details_1 label {
+  top: -3px;
+}
+
+.add-key {
+  color: blue;
+  text-align: left;
+  display: block;
+}
+
+select {
+  width: 96%;
+  padding: 10px;
+  margin: 16px 0;
+}
+
+.select-field {
+  width: 50%;
+  position: relative;
+}
+
+.select-field label {
+  position: absolute;
+  padding: 4px;
+  left: 24px;
+  top: 8px;
+  background-color: white;
+}
+
+.select-field input {
+  width: 50%;
+}
+
+.key-value {
+  display: flex;
+  justify-content: space-between;
+  gap: 7rem;
+}
+
+.key-value .text-field {
+  width: 50%;
+  margin-right: 16px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-new {
+  padding: 8px 16px;
+  border: 1px solid red;
+  border-radius: 4px;
+  cursor: pointer;
+}

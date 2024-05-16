@@ -14,16 +14,15 @@
             border-radius: 8px;
             margin-top: 2rem;
             justify-content: space-between;
-            height: 100vh;
+            // height: 100vh;
             margin-left: 1rem;
 
             .Section-left {
-                width: 40%;
                 border-right: 1px solid lightgray;
 
                 .Header-Section {
                     height: 50px;
-                    background-color: skyblue;
+                    // background-color: skyblue;
                     padding: 14px 8px;
 
                     h3 {
@@ -33,9 +32,18 @@
 
                 table {
                     tbody {
+                      .TableRow1{
+                        background-color: lightgray;
+                      }
+                      .TableRow2{
+                        background-color: skyblue;
+                        border-left: 3px solid blue;
+                        border-top:none;
+                      }
                        tr{
+                        border-bottom: 1px solid gray;
                         td {
-                            padding:6px;
+                          padding: 16px 6px;
                             span {
                                 color: blue;
                             }

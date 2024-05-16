@@ -1,23 +1,27 @@
-.tab{
-    ul{
+.tab {
+    ul {
         list-style-type: none;
-        li{
+
+        li {
             display: inline;
             color: gray;
             text-align: center;
             border-bottom: 2px solid lightgray;
             font-size: 1.25rem;
         }
-        li:hover{
-            color:black;
-            cursor:pointer;
+
+        li:hover {
+            color: black;
+            cursor: pointer;
             border-color: blue;
         }
     }
-    .content{
+
+    .content {
         display: none;
     }
-    .show-content{
+
+    .show-content {
         display: block;
     }
 }

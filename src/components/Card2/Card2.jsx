@@ -9,7 +9,7 @@ const Card2 = ({ riskScenario, riskId, tagKey, tagValue }) => {
     <div className="card2">
       <div className="card2-header">
         <div className="card2-header_left">
-          {riskId}
+          {riskId || "-"}
           <span>
             {tagKey}:{tagValue}
           </span>

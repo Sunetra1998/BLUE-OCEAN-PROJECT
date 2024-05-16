@@ -89,7 +89,7 @@ const riskScenarioData = [
     },
 ];
 const RiskScenarios = () => {
-    const navigate = useNavigate(); // Initialize navigate function
+    const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage, setItemsPerPage] = useState(6);
@@ -103,7 +103,7 @@ const RiskScenarios = () => {
     };
 
     const handleBack = () => {
-        navigate('/library'); // Navigate to '/library' path
+        navigate('/library');
     };
 
     const handleItemsPerPageChange = (value) => {
@@ -116,61 +116,66 @@ const RiskScenarios = () => {
     const currentItems = riskScenarioData.slice(indexOfFirstItem, indexOfLastItem);
 
     return (
-        <div className='RiskScenarios'>
-            <Sidebar />
-            <div className='Main'>
-                <Header />
-                
-                <div className='Navigation'>
-                    <div onClick={handleBack}>
-                        <FaArrowLeft size="1.25rem" className='icon' />
-                        <h3>Library</h3>
-                        <RxSlash size="1.25rem" />
-                        <h3 className='Title'>Risk Scenarios</h3>
+        <>
+            <div className='RiskScenarios'>
+                <Sidebar />
+                <div className='Main'>
+                    <Header />
+
+                    <div className='Navigation'>
+                        <div onClick={handleBack}>
+                            <FaArrowLeft size="1.25rem" className='icon' />
+                            <h3>Library</h3>
+                            <RxSlash size="1.25rem" />
+                            <h3 className='Title'>Risk Scenarios</h3>
+                        </div>
+                        <Button onClick={handleOpenModal} type="submit" name="Add Risk Scenario" />
+
                     </div>
-                    <Button onClick={handleOpenModal} type="submit" name="Add Risk Scenario" />
-                    <AddRiskScenariosModal isOpen={isOpen} onClose={handleCloseModal} />
-                </div>
-                <div className='Risk-section'>
-                    <main>
-                        <CustomInput
-                            label="Search"
-                            type="search"
-                            name="search"
-                            placeholder="Search by keywords"
-                        />
-                        <div className="right">
-                            <Button
-                                bgColor="white"
-                                color="black"
-                                name="Sort: RiskId (Ascending) "
+                    <div className='Risk-section'>
+                        <main>
+                            <CustomInput
+                                type="search"
+                                name="search"
+                                placeholder="Search by keywords"
                             />
-                            <Button bgColor="white" color="black" name="Filter " />
-                        </div>
-                    </main>
-                    <section className="card2-container">
-                        <div>
-                            {currentItems.map((risk) => (
-                                <Card2
-                                    key={risk.RiskId}
-                                    riskId={risk.RiskId}
-                                    tagKey={risk.TagKey}
-                                    tagValue={risk.TagValue}
-                                    riskScenario={risk.RiskScenario}
+                            <div className="right">
+                                <Button
+                                    bgColor="white"
+                                    color="black"
+                                    name="Sort: RiskId (Ascending) "
                                 />
-                            ))}
-                            <Pagination
-                                totalItems={riskScenarioData.length}
-                                itemsPerPage={itemsPerPage}
-                                currentPage={currentPage}
-                                onPageChange={setCurrentPage}
-                                onItemsPerPageChange={handleItemsPerPageChange}
-                            />
-                        </div>
-                    </section>
+                                <Button bgColor="white" color="black" name="Filter " />
+                            </div>
+                        </main>
+                        <section className="card2-container">
+                            <div>
+                                {currentItems.map((risk) => (
+                                    <Card2
+                                        key={risk.RiskId}
+                                        riskId={risk.RiskId}
+                                        tagKey={risk.TagKey}
+                                        tagValue={risk.TagValue}
+                                        riskScenario={risk.RiskScenario}
+                                    />
+                                ))}
+                                <Pagination
+                                    totalItems={riskScenarioData.length}
+                                    itemsPerPage={itemsPerPage}
+                                    currentPage={currentPage}
+                                    onPageChange={setCurrentPage}
+                                    onItemsPerPageChange={handleItemsPerPageChange}
+                                />
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
+            {isOpen && (
+                <AddRiskScenariosModal isOpen={isOpen} onClose={handleCloseModal} />
+            )
+            }
+        </>
     );
 };
 

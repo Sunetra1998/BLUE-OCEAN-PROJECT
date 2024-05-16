@@ -17,7 +17,7 @@ const Pagination = ({ totalItems, itemsPerPage, currentPage, onPageChange, onIte
     return (
         <div className="pagination">
             <div className="items-per-page">
-                <span>View users per page:</span>
+                {/* <span>View users per page:</span> */}
                 <select value={itemsPerPage} onChange={handleItemsPerPageChange}>
                     <option value="6">6</option>
                     <option value="12">12</option>

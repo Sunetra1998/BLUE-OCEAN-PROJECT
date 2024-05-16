@@ -20,7 +20,7 @@ const Assignment = () => {
               </div>
               <table>
                 <tbody>
-                  <tr>
+                  <tr className='TableRow1'>
                     <td style={{ width: "30%" }}>
                       <CustomInput
                         label="Search"
@@ -32,7 +32,7 @@ const Assignment = () => {
                     <td style={{ width: "25%" }}>Likelihood Score</td>
                     <td style={{ width: "25%" }}>Business Impact</td>
                   </tr>
-                  <tr>
+                  <tr className='TableRow2'>
                     <td style={{ width: "40%" }}>
                       <strong>Confidently of system ABC is <br />compromised. <span>view less</span></strong>
                     </td>

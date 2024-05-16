@@ -21,5 +21,9 @@
       color: black;
       margin-top: 0.4rem;
       margin-bottom: 0.4rem;
+      .card-footer{
+        border-top: none;
+        background-color: white;
+      }
     }
   }
